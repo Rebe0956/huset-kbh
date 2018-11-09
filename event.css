@@ -1,181 +1,183 @@
+/*
     @font-face {
         font-family: "Huset";
         src: url("fonts/huset.otf");
     }
+*/
 
-    body {
-        margin: 0;
-        background-image: url(wall.png);
-    }
-
-    .event_logo {
-        width: 50%;
-        margin: 4vw;
-        margin-bottom: 0;
-    }
-
-    main {
-        margin: 8vw;
-        color: white;
-        margin-top: 15vw;
-    }
-
-    .events {
-        padding: 4vw;
-        color: white;
-        font-family: Avenir;
-        max-width: 100%;
-        display: grid;
-        grid-gap: 20px;
-    }
-
-    .event_container {
-        border: 3px solid white;
-        display: grid;
-        grid-template-columns: 10px repeat(2, 1fr) 10px;
-        grid-template-rows: 10px repeat(6, 1fr) 10px;
-        width: 100%;
-    }
-
-    .title {
-        font-size: 4.5vw;
-        grid-column: 2 / 5;
-        grid-row: 2 / 3;
-        z-index: 2;
-    }
-
-    .date {
-        font-family: Huset;
-        font-size: 8vw;
-        grid-column: 2/3;
-        grid-row: 3/4;
-        z-index: 2;
-    }
-
-    .kob_knap {
-        font-family: Avenir;
-        border: none;
-        font-size: 4vw;
-        padding: 2vw;
-        width: 40vw;
-    }
-
-    .kob_billet {
-        grid-column: 2/3;
-        grid-row: 7/8;
-        z-index: 2;
-    }
-
-    .time {
-        grid-column: 2/3;
-        grid-row: 4/5;
-        z-index: 2;
-        font-size: 4vw;
-    }
-
-    .place {
-        grid-column: 3/4;
-        grid-row: 3/4;
-        z-index: 2;
-        font-size: 4vw;
-    }
-
-    .pris {
-        grid-column: 3/4;
-        grid-row: 4/5;
-        z-index: 2;
-        font-size: 6vw;
-    }
-
-    .knapper {
-        padding: 4vw;
-        color: white;
-        text-align: center;
-    }
-
-    .menu_item {
-        font-family: Avenir;
-        border: none;
-        padding: 1vw;
-        font-size: 3vw;
-        background: none;
-        color: white;
-        border-bottom: 1px solid white;
-    }
-
-    .menu_item:hover {
-        color: gray;
-    }
-
-    .image {
-        width: 100%;
-        grid-column: 1/9;
-        grid-row: 1/9;
-        z-index: 1;
-        opacity: 0.6;
-    }
-
-
-@media screen and (min-width:768px){
-.events{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
+body {
+    margin: 0;
+    background-image: url(wall.png);
 }
-    .title{
+
+.event_logo {
+    width: 50%;
+    margin: 4vw;
+    margin-bottom: 0;
+}
+
+main {
+    margin: 8vw;
+    color: white;
+    margin-top: 15vw;
+}
+
+.events {
+    padding: 4vw;
+    color: white;
+    font-family: Avenir;
+    max-width: 100%;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.event_container {
+    border: 3px solid white;
+    display: grid;
+    grid-template-columns: 10px repeat(2, 1fr) 10px;
+    grid-template-rows: 10px repeat(6, 1fr) 10px;
+    width: 100%;
+}
+
+.title {
+    font-size: 4.5vw;
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    z-index: 2;
+}
+
+.date {
+    font-family: Huset;
+    font-size: 8vw;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    z-index: 2;
+}
+
+.kob_knap {
+    font-family: Avenir;
+    border: none;
+    font-size: 4vw;
+    padding: 2vw;
+    width: 40vw;
+}
+
+.kob_billet {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    z-index: 2;
+}
+
+.time {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    z-index: 2;
+    font-size: 4vw;
+}
+
+.place {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    z-index: 2;
+    font-size: 4vw;
+}
+
+.pris {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    z-index: 2;
+    font-size: 6vw;
+}
+
+.knapper {
+    padding: 4vw;
+    color: white;
+    text-align: center;
+}
+
+.menu_item {
+    font-family: Avenir;
+    border: none;
+    padding: 1vw;
+    font-size: 3vw;
+    background: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.menu_item:hover {
+    color: gray;
+}
+
+.image {
+    width: 100%;
+    grid-column: 1/9;
+    grid-row: 1/9;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+
+@media screen and (min-width:768px) {
+    .events {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+    .title {
         font-size: 2.5vw;
     }
 
-    .date{
+    .date {
         font-size: 3.5vw;
     }
 
-    .place{
+    .place {
         font-size: 2vw;
     }
 
-    .time{
+    .time {
         font-size: 2vw;
     }
 
-    .pris{
+    .pris {
         font-size: 3.5vw;
     }
 
-    .kob_knap{
+    .kob_knap {
         width: 16vw;
         font-size: 2vw;
         padding: 1vw;
     }
 }
 
-@media screen and (min-width:1024px){
-    .events{
-        display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px
-}
-    .title{
+@media screen and (min-width:1024px) {
+    .events {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px
+    }
+    .title {
         font-size: 1.5vw;
     }
 
-    .date{
+    .date {
         font-size: 2vw;
     }
 
-    .place{
+    .place {
         font-size: 1.2vw;
     }
 
-    .time{
+    .time {
         font-size: 1.2vw;
     }
 
-    .pris{
+    .pris {
         font-size: 2vw;
     }
 
-    .kob_knap{
+    .kob_knap {
         width: 10vw;
         font-size: 1vw;
         padding: 0.7vw;
@@ -184,10 +186,10 @@
 
 /*-------------------------------------------*/
 
-#modal{
+#modal {
     background-image: url(wall.png);
     border: 1px solid white;
-    height:100%;
+    height: 100%;
     width: 79vw;
     position: fixed;
     z-index: 3;
@@ -196,7 +198,7 @@
     padding: 3vw;
 }
 
-#modal_content{
+#modal_content {
     width: 78vw;
     height: 100%;
     margin: auto;
@@ -206,13 +208,13 @@
     overflow: scroll;
 }
 
-#modal.vis{
+#modal.vis {
     opacity: 4;
     pointer-events: all;
     transition: 0.7s;
 }
 
-.modal_close{
+.modal_close {
     background-image: url(wall.png);
     width: 75vw;
     padding: 2vw;
@@ -221,7 +223,7 @@
     position: fixed;
 }
 
-.modal_navn{
+.modal_navn {
     font-family: avenir;
     font-size: 8vw;
     grid-column: 1/3;
@@ -229,31 +231,31 @@
     margin-top: 20vw;
 }
 
-.modal_date{
+.modal_date {
     font-family: huset;
     grid-column: 1/2;
     grid-row: 3/4;
 }
 
-.modal_time{
+.modal_time {
     font-family: avenir;
     grid-column: 1/2;
     grid-row: 4/5;
 }
 
-.modal_place{
+.modal_place {
     font-family: avenir;
     grid-column: 3/4;
     grid-row: 3/4;
 }
 
-.modal_pris{
+.modal_pris {
     font-family: avenir;
     grid-column: 3/4;
     grid-row: 4/5;
 }
 
-.modal_langbeskrivelse{
+.modal_langbeskrivelse {
     font-family: avenir;
     grid-column: 1/4;
     grid-row: 5/6;
